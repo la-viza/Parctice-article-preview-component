@@ -5,6 +5,13 @@ $color-secondary: hsl(214, 17%, 51%);
 $color-background: hsl(212, 23%, 69%);
 $color-footer: hsl(210, 46%, 95%);
 
+// FONT VARIABLES
 
+$font-primary: "Manrope", sans-serif;
+$font-headings: "Manrope", sans-serif;
 
-- Light Grayish Blue: 
+h1 {
+  color: $color-primary;
+  font-family: $font-headings;
+  font-weight: 700;
+}

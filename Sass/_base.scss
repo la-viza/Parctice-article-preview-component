@@ -10,6 +10,26 @@ $color-footer: hsl(210, 46%, 95%);
 $font-primary: "Manrope", sans-serif;
 $font-headings: "Manrope", sans-serif;
 
+main {
+  margin: 0 auto;
+  border: 0.5rem solid black;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  .child {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 0 2rem;
+    width: 80%;
+    border: 0.5rem solid red;
+  }
+  .image {
+    width: 100px;
+    height: 100%;
+  }
+}
+
 h1 {
   color: $color-primary;
   font-family: $font-headings;

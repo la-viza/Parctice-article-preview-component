@@ -21,7 +21,7 @@
 }
 
 * body main {
-  max-width: 70vw;
+  max-width: 55vw;
   height: 43vh;
   border-radius: 50%;
 }
@@ -49,19 +49,53 @@
   background-color: white;
   max-width: 100%;
   height: 43vh;
-  padding: 2rem;
+  padding: 2.5rem 3.5rem 2.5rem;
 }
 
 * body main .wrapper .right h1 {
   color: #48556a;
   font-family: "Manrope", sans-serif;
   font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+* body main .wrapper .right__paragraph {
+  color: #6d7f97;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+  line-height: 1.6;
+  letter-spacing: 0.7;
+}
+
+* body main .wrapper .right .user {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #9eafc2;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
 }
 
 * body main .wrapper .right .user__avatar {
-  display: inline-block;
-  max-width: 15%;
+  max-width: 12%;
   height: auto;
   border-radius: 50%;
+}
+
+* body main .wrapper .right .user__name {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bold;
+  color: #48556a;
+  padding-left: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

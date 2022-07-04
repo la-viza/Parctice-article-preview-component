@@ -23,9 +23,10 @@ $font-primary: "Manrope", sans-serif;
     align-items: center;
 
     main {
-      max-width: 70vw;
+      max-width: 55vw;
       height: 43vh;
       border-radius: 50%;
+
       .wrapper {
         display: grid;
         grid-template-columns: 40% 60%;
@@ -44,19 +45,45 @@ $font-primary: "Manrope", sans-serif;
           background-color: white;
           max-width: 100%;
           height: 43vh;
-          padding: 2rem;
+          padding: 2.5rem 3.5rem 2.5rem;
 
           h1 {
             color: $color-primary;
             font-family: $font-primary;
             font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 1.5;
+          }
+
+          &__paragraph {
+            color: $color-secondary;
+            font-family: $font-primary;
+            font-weight: 500;
+            font-size: 0.8rem;
+            padding: 1rem 0;
+            line-height: 1.6;
+            letter-spacing: 0.7;
           }
           .user {
+            display: inline-flex;
+
+            color: $color-background;
+            font-family: $font-primary;
+            font-weight: 500;
+            font-size: 0.8rem;
+
             &__avatar {
-              display: inline-block;
-              max-width: 15%;
+              max-width: 12%;
               height: auto;
               border-radius: 50%;
+            }
+
+            &__name {
+              display: inline-flex;
+              flex-direction: column;
+              font-weight: bold;
+              color: $color-primary;
+              padding-left: 1rem;
             }
           }
         }

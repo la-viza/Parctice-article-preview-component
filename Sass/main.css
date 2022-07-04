@@ -112,4 +112,13 @@
 * body main .wrapper .right .user__box-date {
   font-size: 0.8rem;
 }
+
+* .share-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  background-color: red;
+  padding: 0;
+}
 /*# sourceMappingURL=main.css.map */

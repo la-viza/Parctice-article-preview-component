@@ -127,4 +127,36 @@
   margin: 0.4rem 0.5rem 0.3rem;
   background-color: #ecf2f8;
 }
+
+* body main .container {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+* body main .container .xyz-dialog {
+  background: #48556a;
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  position: relative;
+  width: 300px;
+}
+
+* body main .container .xyz-dialog::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #48556a;
+  margin-left: 8rem;
+  position: absolute;
+  top: 100%;
+}
+
+* body main .container .body {
+  margin-top: 8px;
+  color: gray;
+  font-size: 15px;
+}
 /*# sourceMappingURL=main.css.map */

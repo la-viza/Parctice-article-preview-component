@@ -112,6 +112,35 @@ $font-primary: "Manrope", sans-serif;
           }
         }
       }
+
+      .container {
+        width: max-content;
+
+        .xyz-dialog {
+          background: $color-primary;
+          padding: 1rem 2rem;
+          border-radius: 9px;
+          position: relative;
+          width: 300px;
+        }
+
+        .xyz-dialog::after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid $color-primary;
+          margin-left: 8rem;
+          position: absolute;
+          top: 100%;
+        }
+        .body {
+          margin-top: 8px;
+          color: gray;
+          font-size: 15px;
+        }
+      }
     }
   }
 }

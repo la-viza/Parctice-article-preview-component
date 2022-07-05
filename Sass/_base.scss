@@ -114,7 +114,9 @@ $font-primary: "Manrope", sans-serif;
       }
 
       .container {
+        display: flex;
         width: max-content;
+        justify-content: space-between;
 
         .xyz-dialog {
           background: $color-primary;
@@ -135,9 +137,9 @@ $font-primary: "Manrope", sans-serif;
           position: absolute;
           top: 100%;
         }
-        .body {
+        .title {
           margin-top: 8px;
-          color: gray;
+          color: $color-footer;
           font-size: 15px;
         }
       }

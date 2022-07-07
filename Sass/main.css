@@ -124,12 +124,21 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  padding: 1rem;
+  padding: 0.7rem;
   background-color: #ecf2f8;
 }
 
+* body main .wrapper .right .user .share-icon .icon:hover {
+  -webkit-filter: brightness(3);
+          filter: brightness(3);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
 * body main .wrapper .right .user .share-icon:hover, * body main .wrapper .right .user .share-icon:target {
-  background-color: #48556a;
+  background-color: #6d7f97;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .container {

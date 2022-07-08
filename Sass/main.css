@@ -213,4 +213,11 @@
           align-items: center;
   padding: 0.4rem;
 }
+
+.container .sm-icon:hover, .container .sm-icon:target {
+  background-color: #6d7f97;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=main.css.map */

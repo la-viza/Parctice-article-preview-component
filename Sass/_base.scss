@@ -138,7 +138,7 @@ $font-primary: "Manrope", sans-serif;
 
   .xyz-dialog {
     background: $color-primary;
-    padding: 0.3rem 2.1rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 9px;
     position: relative;
     width: 15rem;
@@ -152,7 +152,7 @@ $font-primary: "Manrope", sans-serif;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid $color-primary;
-    margin-left: 5rem;
+    margin-left: -5.8rem;
     position: absolute;
     top: 100%;
   }
@@ -165,12 +165,15 @@ $font-primary: "Manrope", sans-serif;
     color: $color-footer;
     font-size: 0.8rem;
     letter-spacing: 0.3rem;
-    margin-right: 0.5rem;
+  }
+
+  .socialToolBox:first-child {
+    margin-left: 0.5rem;
   }
   .sm-icon {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 0.6rem;
+    padding: 0.4rem;
   }
 }

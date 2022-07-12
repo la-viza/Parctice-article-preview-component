@@ -103,6 +103,7 @@
   * body main .wrapper .right {
     padding: 2rem;
     border-radius: 0 0 0.7rem 0.7rem;
+    height: 50vh;
   }
 }
 

@@ -146,6 +146,7 @@ $bp-smallest: 28.125em; // 450/16
               // margin: 0.4rem 0.5rem 0.3rem;
               padding: 0.7rem;
               background-color: $color-background;
+
               .icon:hover {
                 filter: brightness(3);
                 transition: 0.2s ease-out;
@@ -240,5 +241,14 @@ $bp-smallest: 28.125em; // 450/16
       transition: 0.1s ease-in-out;
       border-radius: 50%;
     }
+  }
+
+  .share-icon-mobile {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 50%;
+    // margin: 0.4rem 0.5rem 0.3rem;
+    padding: 0.7rem;
+    background-color: $color-footer;
   }
 }

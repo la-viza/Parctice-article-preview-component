@@ -212,6 +212,8 @@
   .container {
     margin: auto;
     position: relative;
+    top: -7rem;
+    width: 100%;
   }
 }
 
@@ -224,6 +226,23 @@
   opacity: 0.9;
 }
 
+@media only screen and (max-width: 51.25em) {
+  .container .xyz-dialog {
+    border-radius: 0 0 9px 9px;
+    width: 25rem;
+    padding: 1.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .container .xyz-dialog::after {
   content: "";
   width: 0;
@@ -234,6 +253,12 @@
   margin-left: -5.8rem;
   position: absolute;
   top: 100%;
+}
+
+@media only screen and (max-width: 51.25em) {
+  .container .xyz-dialog::after {
+    visibility: hidden;
+  }
 }
 
 .container .title {

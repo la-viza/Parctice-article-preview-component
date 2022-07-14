@@ -176,6 +176,8 @@ $bp-smallest: 28.125em; // 450/16
   @media only screen and (max-width: $bp-medium) {
     margin: auto;
     position: relative;
+    top: -7rem;
+    width: 100%;
   }
 
   .xyz-dialog {
@@ -185,6 +187,15 @@ $bp-smallest: 28.125em; // 450/16
     position: relative;
     width: 15rem;
     opacity: 0.9;
+
+    @media only screen and (max-width: $bp-medium) {
+      border-radius: 0 0 9px 9px;
+      width: 25rem;
+      padding: 1.1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .xyz-dialog::after {
@@ -197,6 +208,10 @@ $bp-smallest: 28.125em; // 450/16
     margin-left: -5.8rem;
     position: absolute;
     top: 100%;
+
+    @media only screen and (max-width: $bp-medium) {
+      visibility: hidden;
+    }
   }
   .title {
     display: inline-flex;

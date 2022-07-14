@@ -208,6 +208,13 @@
   position: relative;
 }
 
+@media only screen and (max-width: 51.25em) {
+  .container {
+    margin: auto;
+    position: relative;
+  }
+}
+
 .container .xyz-dialog {
   background: #48556a;
   padding: 0.5rem 1.5rem;

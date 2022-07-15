@@ -22,8 +22,8 @@
 
 @media only screen and (max-width: 51.25em) {
   * body {
-    overflow: scroll;
-    height: auto;
+    min-height: 100%;
+    margin-top: 4rem;
   }
 }
 
@@ -34,7 +34,7 @@
 
 @media only screen and (max-width: 51.25em) {
   * body main {
-    height: 100%;
+    max-height: 100%;
   }
 }
 

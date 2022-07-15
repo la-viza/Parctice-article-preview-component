@@ -1,7 +1,6 @@
+const arrow = document.querySelector(".share");
+const share = document.querySelector(".container");
 
-
-
-
-let form = document.getElementById("socialShare");
-
-
+arrow.addEventListener("click", function () {
+  share.classList.toggle("show");
+});

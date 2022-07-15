@@ -136,34 +136,37 @@ $bp-smallest: 28.125em; // 450/16
             &__box-date {
               font-size: 0.8rem;
             }
-
-            .share-icon {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              border-radius: 50%;
-              padding: 0.7rem;
-              background-color: $color-background;
-              z-index: 1;
-
-              @media only screen and (max-width: $bp-medium) {
-                position: absolute;
-                padding: 0.5rem;
-                margin: 0.1rem -1.5rem;
-              }
-
-              .icon:hover {
-                filter: brightness(3);
-                transition: 0.2s ease-out;
-              }
-
-              &:hover,
-              &:target {
-                background-color: $color-secondary;
-                transition: 0.3s ease-in-out;
-              }
-            }
           }
+        }
+      }
+
+      .share {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        // padding: 0.5rem;
+        background-color: $color-background;
+        z-index: 1;
+
+        @media only screen and (max-width: $bp-medium) {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          position: absolute;
+          padding: 0.5rem 0.6rem;
+          margin: -2.3rem 16.5rem;
+        }
+
+        .icon:hover {
+          filter: brightness(3);
+          transition: 0.2s ease-out;
+        }
+
+        &:hover,
+        &:target {
+          background-color: $color-secondary;
+          transition: 0.3s ease-in-out;
         }
       }
     }

@@ -140,22 +140,21 @@ $bp-smallest: 28.125em; // 450/16
         }
       }
 
-      .share {
+      .arrow {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-end;
+        align-items: flex-start;
         border-radius: 50%;
-        // padding: 0.5rem;
+        padding: 0.6rem;
         background-color: $color-background;
         z-index: 1;
+        cursor: pointer;
 
         @media only screen and (max-width: $bp-medium) {
           display: flex;
-          justify-content: flex-end;
           align-items: center;
           position: absolute;
-          padding: 0.5rem 0.6rem;
-          margin: -2.3rem 16.5rem;
+          margin-left: 16rem;
         }
 
         .icon:hover {
@@ -187,7 +186,7 @@ $bp-smallest: 28.125em; // 450/16
     position: relative;
     top: -9.5rem;
     width: 100%;
-    // visibility: hidden;
+    visibility: hidden;
   }
 
   .xyz-dialog {

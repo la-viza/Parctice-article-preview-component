@@ -102,7 +102,7 @@
 @media only screen and (max-width: 51.25em) {
   * body main .wrapper .right {
     border-radius: 0 0 0.7rem 0.7rem;
-    height: 48vh;
+    height: 46vh;
   }
 }
 
@@ -165,16 +165,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   padding: 0.6rem;
   background-color: #ecf2f8;
-  z-index: 1;
+  z-index: 10;
   cursor: pointer;
 }
 
@@ -187,7 +187,8 @@
         -ms-flex-align: center;
             align-items: center;
     position: absolute;
-    margin-left: 16rem;
+    margin: 0.3rem 0 0 16rem;
+    padding: 0.5rem;
   }
 }
 
@@ -204,7 +205,13 @@
   transition: 0.3s ease-in-out;
 }
 
-.container {
+@media only screen and (max-width: 51.25em) {
+  * body main .arrow:hover, * body main .arrow:target {
+    background-color: #9eafc2;
+  }
+}
+
+.share {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +224,7 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  position: right;
+  position: absolute;
   margin: -8.7rem 0 0 36.8rem;
   position: relative;
   /* .share-icon-mobile {
@@ -239,16 +246,15 @@
 }
 
 @media only screen and (max-width: 51.25em) {
-  .container {
+  .share {
     margin: auto;
     position: relative;
     top: -9.5rem;
     width: 100%;
-    visibility: hidden;
   }
 }
 
-.container .xyz-dialog {
+.share .xyz-dialog {
   background: #48556a;
   padding: 0.5rem 1.5rem;
   border-radius: 9px;
@@ -258,10 +264,10 @@
 }
 
 @media only screen and (max-width: 51.25em) {
-  .container .xyz-dialog {
+  .share .xyz-dialog {
     border-radius: 0 0 9px 9px;
     width: 25rem;
-    padding: 1.3rem 2rem;
+    padding: 1.43em 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -275,7 +281,7 @@
   }
 }
 
-.container .xyz-dialog::after {
+.share .xyz-dialog::after {
   content: "";
   width: 0;
   height: 0;
@@ -288,12 +294,12 @@
 }
 
 @media only screen and (max-width: 51.25em) {
-  .container .xyz-dialog::after {
+  .share .xyz-dialog::after {
     visibility: hidden;
   }
 }
 
-.container .title {
+.share .title {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -311,16 +317,16 @@
 }
 
 @media only screen and (max-width: 51.25em) {
-  .container .title {
+  .share .title {
     margin-left: 1.4rem;
   }
 }
 
-.container .socialToolBox:first-child {
+.share .socialToolBox:first-child {
   margin-left: 0.5rem;
 }
 
-.container .sm-icon {
+.share .sm-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -333,10 +339,15 @@
   padding: 0.4rem;
 }
 
-.container .sm-icon:hover, .container .sm-icon:target {
+.share .sm-icon:hover, .share .sm-icon:target {
   background-color: #6d7f97;
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
   border-radius: 50%;
+}
+
+.share .show {
+  visibility: visible;
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

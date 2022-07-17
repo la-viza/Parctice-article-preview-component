@@ -1,5 +1,5 @@
-const arrow = document.querySelector(".share");
-const share = document.querySelector(".container");
+const arrow = document.querySelector(".arrow");
+const share = document.querySelector(".share");
 
 arrow.addEventListener("click", function () {
   share.classList.toggle("show");

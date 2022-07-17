@@ -1,13 +1,10 @@
 function setClickEvent() {
-  const cardFooter = document.querySelector('.arrow')
-  const cardShare = document.querySelector('.share')
-
-  const shareIcon = document.querySelector('.arrow')
+const shareIcon = document.querySelector('.icon')
+const cardShare = document.querySelector('.share')
 
   shareIcon.addEventListener('click', () => {
    cardShare.classList.toggle('disabled')
-    cardFooter.classList.toggle('disabled')
-  })
+   })
 }
 
 window.addEventListener('DOMContentLoaded', () => {

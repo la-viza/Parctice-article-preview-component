@@ -1,6 +1,15 @@
-const arrow = document.querySelector(".arrow");
-const share = document.querySelector(".share");
+function setClickEvent() {
+  const cardFooter = document.querySelector('.arrow')
+  const cardShare = document.querySelector('.share')
 
-arrow.addEventListener("click", function () {
-  share.classList.toggle("show");
-});
+  const shareIcon = document.querySelector('.arrow')
+
+  shareIcon.addEventListener('click', () => {
+   cardShare.classList.toggle('disabled')
+    cardFooter.classList.toggle('disabled')
+  })
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  setClickEvent()
+})

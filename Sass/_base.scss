@@ -183,13 +183,13 @@ $bp-smallest: 28.125em; // 450/16
   align-items: center;
   width: max-content;
   position: absolute;
-  margin: -8.7rem 0 0 36.8rem;
+  margin: -14.7rem 0 0 39rem;
   position: relative;
 
   @media only screen and (max-width: $bp-medium) {
     margin: auto;
     position: relative;
-    top: -9.5rem;
+    top: -4.5rem;
     width: 100%;
     // visibility: hidden;
   }
@@ -220,7 +220,7 @@ $bp-smallest: 28.125em; // 450/16
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid $color-primary;
-    margin-left: -5.8rem;
+    margin-left: -6.6rem;
     position: absolute;
     top: 100%;
 
@@ -278,8 +278,7 @@ $bp-smallest: 28.125em; // 450/16
     } 
   } */
 
-  .show {
-    visibility: visible;
-    opacity: 1;
+  .disabled {
+    display: none;
   }
 }

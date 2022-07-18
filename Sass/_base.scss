@@ -10,9 +10,9 @@ $color-background: hsl(210, 46%, 95%);
 $font-primary: "Manrope", sans-serif;
 
 // RESPONSIVE BREAKPOINTS
-$bp-largest: 81.25em; // 1300px/16px
-$bp-large: 62.5em; // 1000px/16
-$bp-medium: 51.25em; // 820px/16
+$bp-largest: 83.125em; // 1330px/16px
+$bp-large: 68.75em; // 1100px/16
+$bp-medium: 53.125em; // 850px/16
 $bp-small: 37.5em; // 600px/16
 $bp-smallest: 28.125em; // 450/16
 
@@ -29,17 +29,26 @@ $bp-smallest: 28.125em; // 450/16
     justify-content: center;
     align-items: center;
 
+    @media only screen and (max-width: $bp-large) {
+      height: 100vh;
+    }
+
     @media only screen and (max-width: $bp-medium) {
-      min-height: 100%;
-      margin-top: 4rem;
+      max-height: 100%;
     }
 
     main {
       max-width: 53vw;
       height: 42vh;
 
+      @media only screen and (max-width: $bp-large) {
+        max-width: 50vw;
+        max-height: 100vh;
+      }
+
       @media only screen and (max-width: $bp-medium) {
-        max-height: 100%;
+        max-width: 45vw;
+        max-height: 100vh;
       }
 
       .wrapper {
@@ -47,6 +56,10 @@ $bp-smallest: 28.125em; // 450/16
         grid-template-columns: 45% 60%;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: $bp-largest) {
+          grid-template-columns: 45% 60%;
+        }
 
         @media only screen and (max-width: $bp-medium) {
           display: flex;
@@ -58,19 +71,32 @@ $bp-smallest: 28.125em; // 450/16
           width: 125%;
           height: auto;
 
+          @media only screen and (max-width: $bp-large) {
+            width: 150%;
+          }
+
           @media only screen and (max-width: $bp-medium) {
             width: 100%;
-            max-height: 35vh;
+            max-height: 25vh;
           }
 
           &__image {
             display: flex;
             width: 100%;
-            height: 42vh;
+            height: 45vh;
             border-radius: 0.7rem 0 0 0.7rem;
 
+            @media only screen and (max-width: $bp-largest) {
+              height: 43vh;
+            }
+
+            @media only screen and (max-width: $bp-large) {
+              height: 40vh;
+            }
+
             @media only screen and (max-width: $bp-medium) {
-              border-radius: 0.7rem 0.7rem;
+              border-radius: 0.7rem 0.7rem 0 0;
+              height: 30vh;
             }
           }
         }
@@ -78,13 +104,23 @@ $bp-smallest: 28.125em; // 450/16
         .right {
           background-color: white;
           max-width: 100%;
-          height: 42vh;
-          padding: 2.5rem 3rem 2.5rem;
+          height: 45vh;
+          padding: 2.5rem 3rem;
           border-radius: 0 0.7rem 0.7rem 0;
+
+          @media only screen and (max-width: $bp-largest) {
+            height: 43vh;
+            padding: 2rem;
+          }
+
+          @media only screen and (max-width: $bp-large) {
+            height: 40vh;
+            padding: 2rem;
+          }
 
           @media only screen and (max-width: $bp-medium) {
             border-radius: 0 0 0.7rem 0.7rem;
-            height: 47vh;
+            height: 18vh;
           }
 
           h1 {
@@ -93,6 +129,10 @@ $bp-smallest: 28.125em; // 450/16
             font-weight: 700;
             font-size: 1.3rem;
             line-height: 1.5;
+
+            @media only screen and (max-width: $bp-large) {
+              font-size: 0.8rem;
+            }
           }
 
           &__paragraph {
@@ -103,6 +143,10 @@ $bp-smallest: 28.125em; // 450/16
             padding: 1rem 0 0.5rem;
             line-height: 1.6;
             letter-spacing: 0.7;
+
+            @media only screen and (max-width: $bp-large) {
+              font-size: 0.5rem;
+            }
           }
 
           .user {
@@ -112,7 +156,11 @@ $bp-smallest: 28.125em; // 450/16
             font-weight: 500;
             font-size: 0.8rem;
             align-items: center;
-            padding: 0;
+            padding-top: 1rem;
+
+            @media only screen and (max-width: $bp-largest) {
+              padding-top: none;
+            }
 
             &__avatar {
               height: 2.5rem;
@@ -131,10 +179,18 @@ $bp-smallest: 28.125em; // 450/16
               color: $color-primary;
               margin-bottom: 0.2rem;
               font-size: 0.9rem;
+
+              @media only screen and (max-width: $bp-large) {
+                font-size: 0.7rem;
+              }
             }
 
             &__box-date {
               font-size: 0.8rem;
+
+              @media only screen and (max-width: $bp-large) {
+                font-size: 0.6rem;
+              }
             }
           }
         }
@@ -149,6 +205,11 @@ $bp-smallest: 28.125em; // 450/16
         background-color: $color-background;
         z-index: 10;
         cursor: pointer;
+
+        @media only screen and (max-width: $bp-large) {
+          padding: 0.5rem;
+          margin-left: 0.5rem;
+        }
 
         @media only screen and (max-width: $bp-medium) {
           display: flex;
@@ -186,10 +247,19 @@ $bp-smallest: 28.125em; // 450/16
   margin: -14.7rem 0 0 39rem;
   position: relative;
 
+  @media only screen and (max-width: $bp-largest) {
+    margin: -14.7rem 0 0 35.5rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    position: relative;
+    margin: -12rem 0 0 24rem;
+  }
+
   @media only screen and (max-width: $bp-medium) {
     margin: auto;
     position: relative;
-    top: -4.8rem;
+    top: -5.3rem;
     width: 100%;
   }
 
@@ -204,7 +274,7 @@ $bp-smallest: 28.125em; // 450/16
     @media only screen and (max-width: $bp-medium) {
       border-radius: 0 0 9px 9px;
       width: 25rem;
-      padding: 1.43em 2rem;
+      padding: 1.7rem 2rem;
       display: flex;
       justify-content: start;
       align-items: center;
@@ -259,8 +329,8 @@ $bp-smallest: 28.125em; // 450/16
       border-radius: 50%;
     }
   }
-
-  /* .share-icon-mobile {
+}
+/* .share-icon-mobile {
     display: inline-flex;
     align-items: center;
     justify-self: flex-end;
@@ -276,7 +346,6 @@ $bp-smallest: 28.125em; // 450/16
       transition: 0.3s ease-in-out;
     } 
   } */
-}
 
 .disabled {
   display: none;

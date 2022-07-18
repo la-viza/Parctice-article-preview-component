@@ -20,15 +20,15 @@
           align-items: center;
 }
 
-@media only screen and (max-width: 65.625em) {
+@media only screen and (max-width: 68.75em) {
   * body {
     height: 100vh;
   }
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 53.125em) {
   * body {
-    min-height: 100%;
+    max-height: 100%;
   }
 }
 
@@ -37,10 +37,17 @@
   height: 42vh;
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 68.75em) {
+  * body main {
+    max-width: 50vw;
+    max-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 53.125em) {
   * body main {
     max-width: 45vw;
-    max-height: 100%;
+    max-height: 100vh;
   }
 }
 
@@ -57,14 +64,14 @@
           align-items: center;
 }
 
-@media only screen and (max-width: 65.625em) {
+@media only screen and (max-width: 83.125em) {
   * body main .wrapper {
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    -ms-grid-columns: 45% 60%;
+        grid-template-columns: 45% 60%;
   }
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 53.125em) {
   * body main .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -82,16 +89,16 @@
   height: auto;
 }
 
-@media only screen and (max-width: 65.625em) {
+@media only screen and (max-width: 68.75em) {
   * body main .wrapper .left {
     width: 150%;
   }
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 53.125em) {
   * body main .wrapper .left {
     width: 100%;
-    max-height: 35vh;
+    max-height: 25vh;
   }
 }
 
@@ -104,13 +111,19 @@
   border-radius: 0.7rem 0 0 0.7rem;
 }
 
-@media only screen and (max-width: 65.625em) {
+@media only screen and (max-width: 83.125em) {
+  * body main .wrapper .left__image {
+    height: 43vh;
+  }
+}
+
+@media only screen and (max-width: 68.75em) {
   * body main .wrapper .left__image {
     height: 40vh;
   }
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 53.125em) {
   * body main .wrapper .left__image {
     border-radius: 0.7rem 0.7rem 0 0;
     height: 30vh;
@@ -121,21 +134,28 @@
   background-color: white;
   max-width: 100%;
   height: 45vh;
-  padding: 2.5rem 3rem 2.5rem;
+  padding: 2.5rem 3rem;
   border-radius: 0 0.7rem 0.7rem 0;
 }
 
-@media only screen and (max-width: 65.625em) {
+@media only screen and (max-width: 83.125em) {
+  * body main .wrapper .right {
+    height: 43vh;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 68.75em) {
   * body main .wrapper .right {
     height: 40vh;
     padding: 2rem;
   }
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 53.125em) {
   * body main .wrapper .right {
     border-radius: 0 0 0.7rem 0.7rem;
-    height: 28vh;
+    height: 18vh;
   }
 }
 
@@ -147,7 +167,7 @@
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 65.625em) {
+@media only screen and (max-width: 68.75em) {
   * body main .wrapper .right h1 {
     font-size: 0.8rem;
   }
@@ -163,7 +183,7 @@
   letter-spacing: 0.7;
 }
 
-@media only screen and (max-width: 65.625em) {
+@media only screen and (max-width: 68.75em) {
   * body main .wrapper .right__paragraph {
     font-size: 0.5rem;
   }
@@ -180,7 +200,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
+  padding-top: 1rem;
+}
+
+@media only screen and (max-width: 83.125em) {
+  * body main .wrapper .right .user {
+    padding-top: none;
+  }
 }
 
 * body main .wrapper .right .user__avatar {
@@ -202,7 +228,7 @@
   font-size: 0.9rem;
 }
 
-@media only screen and (max-width: 65.625em) {
+@media only screen and (max-width: 68.75em) {
   * body main .wrapper .right .user__box-name {
     font-size: 0.7rem;
   }
@@ -212,7 +238,7 @@
   font-size: 0.8rem;
 }
 
-@media only screen and (max-width: 65.625em) {
+@media only screen and (max-width: 68.75em) {
   * body main .wrapper .right .user__box-date {
     font-size: 0.6rem;
   }
@@ -235,14 +261,14 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 65.625em) {
+@media only screen and (max-width: 68.75em) {
   * body main .arrow {
     padding: 0.5rem;
     margin-left: 0.5rem;
   }
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 53.125em) {
   * body main .arrow {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -269,7 +295,7 @@
   transition: 0.3s ease-in-out;
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 53.125em) {
   * body main .arrow:hover, * body main .arrow:target {
     background-color: #9eafc2;
   }
@@ -293,21 +319,20 @@
   position: relative;
 }
 
-@media only screen and (max-width: 81.25em) {
+@media only screen and (max-width: 83.125em) {
   .share {
-    position: relative;
-    margin: -13rem 0 0 33.5rem;
+    margin: -14.7rem 0 0 35.5rem;
   }
 }
 
-@media only screen and (max-width: 65.625em) {
+@media only screen and (max-width: 68.75em) {
   .share {
     position: relative;
-    margin: -25rem 0 0 25.5rem;
+    margin: -12rem 0 0 24rem;
   }
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 53.125em) {
   .share {
     margin: auto;
     position: relative;
@@ -325,7 +350,7 @@
   opacity: 0.9;
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 53.125em) {
   .share .xyz-dialog {
     border-radius: 0 0 9px 9px;
     width: 25rem;
@@ -355,7 +380,7 @@
   top: 100%;
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 53.125em) {
   .share .xyz-dialog::after {
     visibility: hidden;
   }
@@ -378,7 +403,7 @@
   letter-spacing: 0.3rem;
 }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 53.125em) {
   .share .title {
     margin-left: 1.4rem;
   }

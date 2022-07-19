@@ -215,6 +215,12 @@
   }
 }
 
+@media only screen and (max-width: 43.75em) {
+  * body main .wrapper .right h1 {
+    font-size: 0.9rem;
+  }
+}
+
 * body main .wrapper .right__paragraph {
   color: #6d7f97;
   font-family: "Manrope", sans-serif;
@@ -228,6 +234,12 @@
 @media only screen and (max-width: 68.75em) {
   * body main .wrapper .right__paragraph {
     font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  * body main .wrapper .right__paragraph {
+    padding: 1rem 0 0.5rem;
   }
 }
 
@@ -246,6 +258,12 @@
 }
 
 @media only screen and (max-width: 83.125em) {
+  * body main .wrapper .right .user {
+    padding-top: none;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
   * body main .wrapper .right .user {
     padding-top: none;
   }

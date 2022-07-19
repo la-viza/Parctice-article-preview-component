@@ -28,7 +28,8 @@
 
 @media only screen and (max-width: 53.125em) {
   * body {
-    max-height: 100%;
+    max-height: 100vh;
+    padding-bottom: 20rem;
   }
 }
 
@@ -98,7 +99,6 @@
 @media only screen and (max-width: 53.125em) {
   * body main .wrapper .left {
     width: 100%;
-    max-height: 25vh;
   }
 }
 
@@ -135,7 +135,7 @@
   }
 }
 
-@media only screen and (max-width: 59.375em) {
+@media only screen and (max-width: 56.25em) {
   * body main .wrapper .left__image {
     height: 44vh;
   }
@@ -144,7 +144,7 @@
 @media only screen and (max-width: 53.125em) {
   * body main .wrapper .left__image {
     border-radius: 0.7rem 0.7rem 0 0;
-    height: 30vh;
+    height: 35vh;
   }
 }
 
@@ -182,7 +182,7 @@
   }
 }
 
-@media only screen and (max-width: 59.375em) {
+@media only screen and (max-width: 56.25em) {
   * body main .wrapper .right {
     height: 44vh;
   }
@@ -191,7 +191,13 @@
 @media only screen and (max-width: 53.125em) {
   * body main .wrapper .right {
     border-radius: 0 0 0.7rem 0.7rem;
-    height: 18vh;
+    height: 37.5vh;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  * body main .wrapper .right {
+    height: 40vh;
   }
 }
 
@@ -318,6 +324,12 @@
   }
 }
 
+@media only screen and (max-width: 46.9em) {
+  * body main .arrow {
+    margin: 0.5rem 0 0 14rem;
+  }
+}
+
 * body main .arrow .icon:hover {
   -webkit-filter: brightness(3);
           filter: brightness(3);
@@ -382,6 +394,12 @@
 @media only screen and (max-width: 65.625em) {
   .share {
     margin: -12rem 0 0 24rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .share {
+    margin: -12rem 0 0 21.5rem;
   }
 }
 
@@ -459,6 +477,12 @@
 @media only screen and (max-width: 53.125em) {
   .share .title {
     margin-left: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 46.9em) {
+  .share .title {
+    margin-left: 0;
   }
 }
 

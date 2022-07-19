@@ -11,8 +11,17 @@ $font-primary: "Manrope", sans-serif;
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 83.125em; // 1330px/16px
+
+$bp-large1: 78.125em; // 1250/16px
+$bp-large2: 71.875em; // 1150/16px
 $bp-large: 68.75em; // 1100px/16
+
+$bp-medium1: 65.625em; // 1050/16px
+$bp-medium2: 59.375em; // 950/16px
 $bp-medium: 53.125em; // 850px/16
+
+// 950
+
 $bp-small: 37.5em; // 600px/16
 $bp-smallest: 28.125em; // 450/16
 
@@ -90,8 +99,19 @@ $bp-smallest: 28.125em; // 450/16
               height: 43vh;
             }
 
+            @media only screen and (max-width: $bp-large1) {
+              height: 47vh;
+            }
             @media only screen and (max-width: $bp-large) {
               height: 40vh;
+            }
+
+            @media only screen and (max-width: $bp-medium1) {
+              height: 42vh;
+            }
+
+            @media only screen and (max-width: $bp-medium2) {
+              height: 44vh;
             }
 
             @media only screen and (max-width: $bp-medium) {
@@ -113,9 +133,21 @@ $bp-smallest: 28.125em; // 450/16
             padding: 2rem;
           }
 
+          @media only screen and (max-width: $bp-large1) {
+            height: 47vh;
+          }
+
           @media only screen and (max-width: $bp-large) {
             height: 40vh;
             padding: 2rem;
+          }
+
+          @media only screen and (max-width: $bp-medium1) {
+            height: 42vh;
+          }
+
+          @media only screen and (max-width: $bp-medium2) {
+            height: 44vh;
           }
 
           @media only screen and (max-width: $bp-medium) {
@@ -131,7 +163,7 @@ $bp-smallest: 28.125em; // 450/16
             line-height: 1.5;
 
             @media only screen and (max-width: $bp-large) {
-              font-size: 0.8rem;
+              font-size: 1rem;
             }
           }
 
@@ -145,7 +177,7 @@ $bp-smallest: 28.125em; // 450/16
             letter-spacing: 0.7;
 
             @media only screen and (max-width: $bp-large) {
-              font-size: 0.5rem;
+              font-size: 0.7rem;
             }
           }
 
@@ -181,7 +213,7 @@ $bp-smallest: 28.125em; // 450/16
               font-size: 0.9rem;
 
               @media only screen and (max-width: $bp-large) {
-                font-size: 0.7rem;
+                font-size: 0.8rem;
               }
             }
 
@@ -189,7 +221,7 @@ $bp-smallest: 28.125em; // 450/16
               font-size: 0.8rem;
 
               @media only screen and (max-width: $bp-large) {
-                font-size: 0.6rem;
+                font-size: 0.7rem;
               }
             }
           }
@@ -243,7 +275,7 @@ $bp-smallest: 28.125em; // 450/16
   justify-content: center;
   align-items: center;
   width: max-content;
-  position: absolute;
+  position: relative;
   margin: -14.7rem 0 0 39rem;
   position: relative;
 
@@ -251,8 +283,19 @@ $bp-smallest: 28.125em; // 450/16
     margin: -14.7rem 0 0 35.5rem;
   }
 
+  @media only screen and (max-width: $bp-large1) {
+    margin: -13rem 0 0 33rem;
+  }
+
+  @media only screen and (max-width: $bp-large2) {
+    margin: -13rem 0 0 29.5rem;
+  }
+
   @media only screen and (max-width: $bp-large) {
-    position: relative;
+    margin: -13rem 0 0 26rem;
+  }
+
+  @media only screen and (max-width: $bp-medium1) {
     margin: -12rem 0 0 24rem;
   }
 

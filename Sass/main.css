@@ -573,25 +573,33 @@
   border-radius: 50%;
 }
 
-/* .share-icon-mobile {
-    display: inline-flex;
-    align-items: center;
-    justify-self: flex-end;
-    border-radius: 50%;
-    // margin: 0.4rem 0.5rem 0.3rem;
-    padding: 0.7rem;
-    // background-color: $color-footer;
-    filter: brightness(3);
-
-    &:hover,
-    &:target {
-      background-color: $color-footer;
-      transition: 0.3s ease-in-out;
-    } 
-  } */
 .disabled {
   display: none;
   -webkit-transition: 1s ease-in;
   transition: 1s ease-in;
+}
+
+.signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10rem;
+  color: #48556a;
+  font-size: 0.7rem;
+  font-family: "Manrope", sans-serif;
+  width: 100%;
+}
+
+.signature__links {
+  color: inherit;
+  text-decoration: none;
+}
+
+.signature__links:hover {
+  cursor: pointer;
+  color: #6d7f97;
 }
 /*# sourceMappingURL=main.css.map */

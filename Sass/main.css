@@ -52,6 +52,13 @@
   }
 }
 
+@media only screen and (max-width: 28.125em) {
+  * body main {
+    max-width: 90vw;
+    max-height: 100vh;
+  }
+}
+
 * body main .wrapper {
   display: -ms-grid;
   display: grid;
@@ -148,6 +155,12 @@
   }
 }
 
+@media only screen and (max-width: 28.125em) {
+  * body main .wrapper .left__image {
+    height: 30vh;
+  }
+}
+
 * body main .wrapper .right {
   background-color: white;
   max-width: 100%;
@@ -198,6 +211,12 @@
 @media only screen and (max-width: 50em) {
   * body main .wrapper .right {
     height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  * body main .wrapper .right {
+    height: 34vh;
   }
 }
 

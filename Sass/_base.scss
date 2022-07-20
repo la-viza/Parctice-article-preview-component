@@ -62,6 +62,11 @@ $bp-smallest: 28.125em; // 450/16
         max-height: 100vh;
       }
 
+      @media only screen and (max-width: $bp-smallest) {
+        max-width: 90vw;
+        max-height: 100vh;
+      }
+
       .wrapper {
         display: grid;
         grid-template-columns: 45% 60%;
@@ -119,6 +124,10 @@ $bp-smallest: 28.125em; // 450/16
               border-radius: 0.7rem 0.7rem 0 0;
               height: 35vh;
             }
+
+            @media only screen and (max-width: $bp-smallest) {
+              height: 30vh;
+            }
           }
         }
 
@@ -158,6 +167,10 @@ $bp-smallest: 28.125em; // 450/16
 
           @media only screen and (max-width: $bp-medium-small) {
             height: 40vh;
+          }
+
+          @media only screen and (max-width: $bp-smallest) {
+            height: 34vh;
           }
 
           h1 {
